@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://java.sun.com/xml/ns/javaee"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+	id="WebApp_ID" version="2.5">
+	<context-param>
+		<description>The default bundle base name for i18n</description>
+		<param-name>i18nDefaultBundle</param-name>
+		<param-value>Messages</param-value>
+	</context-param>
+	<context-param>
+		<description>The locale key name for i18n </description>
+		<param-name>i18nLocaleKey</param-name>
+		<param-value>i18nLocale</param-value>
+	</context-param>
+
+	<display-name>jsp-template-tag</display-name>
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+		<welcome-file>index.jsp</welcome-file>
+	</welcome-file-list>
+</web-app>

@@ -1,0 +1,200 @@
+/** 
+ * The common styles for generic usage.
+ *
+ * @author tonyho 
+ */
+/* common styles */
+.hide {
+	display: none;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.text-left {
+	text-align: left;
+}
+
+.text-right {
+	text-align: right;
+}
+
+.text-middle {
+	vertical-align: middle;
+}
+
+.strong {
+	font-weight: bold;
+}
+
+.pointer {
+	cursor: pointer;
+}
+
+.readonly {
+	color: #666;
+	background-color: #eee;
+}
+
+.panel {
+	padding: 3px 3px 5px;
+}
+
+.loading {
+	display: inline-block;
+	height: 16px;
+	width: 16px;
+	margin: 0 5px;
+	vertical-align: middle;
+	background-image: url(images/loading.gif);
+}
+
+.form-label {
+	font-weight: bold;
+	vertical-align: middle;
+}
+
+td.form-label {
+	text-align: right;
+	vertical-align: top;
+}
+
+/* button */
+.button {
+	padding: 0;
+	margin: 0;
+	border: none;
+	background: url(images/btn-bg.gif) no-repeat;
+	height: 22px;
+	width: 68px;
+	cursor: pointer;
+	color: #333;
+}
+
+a.button {
+	display: inline-block;
+	text-decoration: none;
+	padding: 1px 4px 2px;
+}
+
+.button:hover {
+	color: #000;
+}
+
+/*--  button group --*/
+.button-group button, .button-group a {
+	margin: 5px 5px;
+}
+
+.grid td.button-group button, .grid td.button-group a {
+	margin: 0px 1px;
+}
+
+/* grid table */
+.grid {
+	border: 1px solid #666;
+	border-collapse: collapse;
+	text-align: center;
+	table-layout: fixed;
+	width: 100%;
+}
+
+.grid thead {
+	background-color: #ccc;
+	font-weight: bold;
+}
+
+.grid th, .grid td {
+	padding: 3px 5px;
+	border: 1px solid #666;
+}
+
+.grid tr.even {
+	background-color: #ddd;
+}
+
+.grid tr.odd {
+	background-color: #eee;
+}
+
+.grid tr.even:hover, .grid tr.odd:hover {
+	background-color: #fff;
+}
+
+/* pagination style */
+.pagination * {
+	margin: 0 5px;
+}
+
+.pagination a {
+	color: #00f;
+	text-decoration: none;
+}
+
+.pagination span, .pagination a.disabled {
+	color: #666;
+}
+
+/* 
+* position style
+* NOTE that this depends on parent's position is relative/absolute, or will base on body 
+*/
+.right-top, .right-bottom {
+	position: absolute;
+	/* hack for IE quirks */
+	_position: static;
+	right: 3px;
+}
+
+.right-top {
+	top: 3px;
+}
+
+.right-bottom {
+	bottom: 3px;
+}
+
+.relative {
+	position: relative;
+}
+
+/* colors */
+.red {
+	color: #ff0000;
+}
+
+.green {
+	color: #00ff00;
+}
+
+.blue {
+	color: #0000ff;
+}
+
+/* stand-alone layout style */
+.wrapper {
+	position: relative;
+	overflow: auto;
+	_padding-bottom: 36px;
+}
+
+.header {
+	height: 48px;
+	overflow: hidden;
+}
+
+.footer {
+	position: fixed;
+	_position: absolute;
+	bottom: 0px;
+	height: 36px;
+	line-height: 36px;
+	width: 100%;
+	overflow-x: hidden;
+}
+
+.content {
+	margin: auto;
+	width: 300px;
+}
